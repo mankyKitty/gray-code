@@ -50,8 +50,8 @@ Build-type:          Simple
 
 -- Extra files to be distributed with the package, such as examples or
 -- a README.
-Extra-source-files:
-     Codec/Binary/Gray_props.hs
+-- Extra-source-files:
+--      Codec/Binary/Gray_props.hs
 
 Extra-doc-files:
      CHANGELOG
@@ -69,8 +69,7 @@ Library
 
   -- Packages needed in order to build this package.
   Build-depends:
-     base >= 4.7 && < 5,
-     QuickCheck >= 2
+     base >= 4.7 && < 5
 
   -- Modules not exported by this package.
   -- Other-modules:
@@ -81,4 +80,5 @@ Library
 Test-Suite test-qc
     type:       exitcode-stdio-1.0
     main-is:    test.hs
-    build-depends: base, QuickCheck >= 2
+    build-depends: base, gray-code, QuickCheck >= 2
+    hs-source-dirs: test
