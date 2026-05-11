@@ -1,5 +1,5 @@
 -- | QuickCheck properties of Codec.Binary.Gray module.
-module Codec.Binary.Gray_props where
+module Gray_props where
 
 import Test.QuickCheck
 import qualified Codec.Binary.Gray.Bits as B

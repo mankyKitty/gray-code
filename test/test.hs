@@ -6,7 +6,7 @@ import Test.QuickCheck.Test (verboseCheckWithResult, quickCheckWithResult
 import System.Exit (exitFailure)
 import System.Environment (getArgs)
 
-import Codec.Binary.Gray_props
+import Gray_props
 
 main = do
   args <- getArgs
